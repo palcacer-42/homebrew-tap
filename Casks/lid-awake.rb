@@ -1,10 +1,10 @@
 cask "lid-awake" do
-  version "1.0.0"
-  sha256 "15ebf085bd0ef4e71ce95684699c0b67894485bdd2495c1e03f2fd0f2490a13e"
+  version "2.1.0"
+  sha256 "caf54ec83c83bbb8993e1b2dadf95e3c10fa603ba18008a2457c1d4e7f2847ae"
 
   url "https://github.com/palcacer-42/lid-awake/releases/download/v#{version}/Lid-Awake-v#{version}.zip"
   name "Lid Awake"
-  desc "Keep a MacBook running with the lid closed (no external display needed)"
+  desc "Keep a MacBook running with the lid closed, or blank the screen without sleeping"
   homepage "https://github.com/palcacer-42/lid-awake"
 
   app "Lid Awake.app"
@@ -20,8 +20,9 @@ cask "lid-awake" do
         | sudo tee /etc/sudoers.d/lid-toggle >/dev/null
       sudo chmod 440 /etc/sudoers.d/lid-toggle
 
-    Then open "Lid Awake" and flip the toggle. The app will remind you if the
-    rule is missing.
+    Then open "Lid Awake" and left-click the menu-bar cup icon to toggle it.
+    (Right-click for the menu, including "Turn Screen Off".) The app will remind
+    you if the rule is missing.
 
     The app is not notarized, so on first launch use right-click -> Open (or
     run: xattr -dr com.apple.quarantine "/Applications/Lid Awake.app").
