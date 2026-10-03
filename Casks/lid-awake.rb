@@ -1,6 +1,6 @@
 cask "lid-awake" do
-  version "2.1.0"
-  sha256 "caf54ec83c83bbb8993e1b2dadf95e3c10fa603ba18008a2457c1d4e7f2847ae"
+  version "2.2.0"
+  sha256 "0c659d68ce6ea33ba14ad903a954ba3bf386fabd5e2ae00b791e6196d791fff8"
 
   url "https://github.com/palcacer-42/lid-awake/releases/download/v#{version}/Lid-Awake-v#{version}.zip"
   name "Lid Awake"
